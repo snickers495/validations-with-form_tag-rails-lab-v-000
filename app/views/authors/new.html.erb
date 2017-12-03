@@ -25,7 +25,7 @@
 
   <div class="field <%= ' field_with_errors' if @author.errors[:email].any? %>">
     <%= label_tag "phone_number", "Phone Number" %>
-    <%= text_field_tag "phone_number" %>
+    <%= text_field_tag "phone_number", @author.email %>
   </div>
 
   <%= submit_tag "Create" %>
